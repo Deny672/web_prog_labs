@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 760px;
+    margin: 30px auto;
+    padding: 0 16px;
+    color: #222;
+    line-height: 1.5;
+}
+
+h1 {
+    margin-bottom: 4px;
+}
+
+.sub {
+    color: #666;
+    margin-top: 0;
+}
+
+.task {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 14px 18px;
+    margin-bottom: 16px;
+}
+
+.task h2 {
+    margin: 0 0 6px;
+    font-size: 18px;
+}
+
+code {
+    background: #eee;
+    padding: 1px 5px;
+    border-radius: 3px;
+}
+
+.images img {
+    margin: 4px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.links a {
+    color: #2d6cdf;
+}
+
+input {
+    padding: 6px 8px;
+    margin: 3px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}
+
+#demo {
+    font-weight: bold;
+    min-height: 20px;
+}
+
+.numbers p {
+    display: inline-block;
+    padding: 8px 14px;
+    margin: 4px;
+    background: #f0f0f0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.boxes {
+    display: flex;
+    gap: 12px;
+}
+
+.box {
+    width: 120px;
+    height: 120px;
+    background: #ddd;
+    border: 1px solid #bbb;
+    cursor: pointer;
+}
