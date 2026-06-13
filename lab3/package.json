@@ -1,0 +1,12 @@
+{
+  "name": "lab3-calculator",
+  "version": "1.0.0",
+  "description": "Калькулятор на чистому JavaScript + сервер Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
