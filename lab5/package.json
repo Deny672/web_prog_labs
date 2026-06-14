@@ -1,0 +1,12 @@
+{
+  "name": "lab5-ajax-square",
+  "version": "1.0.0",
+  "description": "AJAX-додаток: обчислення квадрату числа на сервері",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
