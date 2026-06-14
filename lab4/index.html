@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна 4 — функції та масиви</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Лабораторна робота №4</h1>
+    <p class="sub">Функції та масиви в JavaScript</p>
+
+    <section class="task">
+        <h2>1. seconds(total)</h2>
+        <p>Залишок від ділення на 60.</p>
+        <button onclick="run1()">Виконати</button>
+        <pre id="out1"></pre>
+    </section>
+
+    <section class="task">
+        <h2>2. perimeter(side, count)</h2>
+        <p>Периметр правильного багатокутника (P = n·a).</p>
+        <button onclick="run2()">Виконати</button>
+        <pre id="out2"></pre>
+    </section>
+
+    <section class="task">
+        <h2>3. fizzbuzz(n)</h2>
+        <p>Числа 1..n: кратні 3 — fizz, кратні 5 — buzz, кратні 15 — fizzbuzz.</p>
+        <button onclick="run3()">Виконати (n=20)</button>
+        <pre id="out3"></pre>
+    </section>
+
+    <section class="task">
+        <h2>4. Calculate(a, b, c)</h2>
+        <p>Середнє арифметичне трьох чисел.</p>
+        <button onclick="run4()">Виконати</button>
+        <pre id="out4"></pre>
+    </section>
+
+    <section class="task">
+        <h2>5. isDivisible(n, x, y)</h2>
+        <p>Чи ділиться n на x і y — трьома способами.</p>
+        <button onclick="run5()">Виконати (n=24, x=2, y=3)</button>
+        <pre id="out5"></pre>
+    </section>
+
+    <section class="task">
+        <h2>6. Статистика масиву</h2>
+        <p>Масив з N випадкових чисел: max, min, сума, середнє, непарні.</p>
+        <button onclick="run6()">Згенерувати (N=10)</button>
+        <pre id="out6"></pre>
+    </section>
+
+    <section class="task">
+        <h2>7. Матриця 5×5</h2>
+        <p>По головній діагоналі: від'ємні → 0, додатні → 1.</p>
+        <button onclick="run7()">Згенерувати</button>
+        <pre id="out7"></pre>
+    </section>
+
+    <section class="task">
+        <h2>8. Арифметичні операції</h2>
+        <p>Введіть два числа і виберіть операцію.</p>
+        <input type="number" id="numA" value="12">
+        <input type="number" id="numB" value="4">
+        <div class="ops">
+            <button onclick="run8('+')">Add</button>
+            <button onclick="run8('-')">Sub</button>
+            <button onclick="run8('*')">Mul</button>
+            <button onclick="run8('/')">Div</button>
+        </div>
+        <pre id="out8"></pre>
+    </section>
+
+    <section class="task">
+        <h2>9. Аналіз числа</h2>
+        <p>Знак, простота, дільники 2/5/3/6/9.</p>
+        <input type="number" id="num9" value="18">
+        <button onclick="run9()">Виконати</button>
+        <pre id="out9"></pre>
+    </section>
+
+    <section class="task">
+        <h2>10. Перевернути + квадрати</h2>
+        <p>Числа підносяться до квадрату, решта без змін.</p>
+        <button onclick="run10()">Виконати</button>
+        <pre id="out10"></pre>
+    </section>
+
+    <section class="task">
+        <h2>11. Видалення дублікатів</h2>
+        <p>[1, 2, 2, 4, 5, 4, 7, 8, 7, 3, 6] → ...</p>
+        <button onclick="run11()">Виконати</button>
+        <pre id="out11"></pre>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
