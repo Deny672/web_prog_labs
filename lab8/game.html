@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гра — поле</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-screen">
+        <div class="topbar">
+            <span id="timer">Залишилось: 60</span>
+            <span>Наступне число: <b id="next">1</b></span>
+            <a class="btn" href="index.html">На головну</a>
+        </div>
+
+        <div id="field" class="field"></div>
+
+        <button id="restart" class="btn">Почати з початку</button>
+
+        <h2>Статистика спроб</h2>
+        <table id="stats">
+            <thead>
+                <tr><th>Спроба</th><th>Результат</th><th>Час, с</th></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
