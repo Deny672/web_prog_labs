@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* головна сторінка */
+.start-screen {
+    max-width: 600px;
+    margin: 0 auto;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 16px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 18px;
+    background: #2d6cdf;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #2356b3;
+}
+
+.btn.big {
+    font-size: 18px;
+    padding: 12px 28px;
+    margin-top: 12px;
+}
+
+/* сторінка гри */
+.game-screen {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 16px;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 18px;
+}
+
+.game-area {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* поле 5x5 */
+.field {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    gap: 6px;
+    border: 2px solid #999;
+    padding: 8px;
+    width: max-content;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fafafa;
+}
+
+.cell img {
+    width: 92px;
+    height: 92px;
+    pointer-events: none; /* щоб не заважала перетягуванню */
+}
+
+.cell.over {
+    border-color: #2d6cdf;
+    background: #eef3fd;
+}
+
+.cell.found {
+    outline: 3px solid #1a9e3e;
+    outline-offset: -3px;
+}
+
+/* бічна панель з поточною картинкою */
+.side {
+    text-align: center;
+}
+
+.side h3 {
+    margin: 0 0 8px;
+}
+
+.current {
+    width: 120px;
+    height: 120px;
+    border: 2px dashed #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.current img {
+    width: 100px;
+    height: 100px;
+    cursor: grab;
+}

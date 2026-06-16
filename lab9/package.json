@@ -1,0 +1,12 @@
+{
+  "name": "lab9-find-image-game",
+  "version": "1.0.0",
+  "description": "Гра знайди картинку на jQuery UI + сервер Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

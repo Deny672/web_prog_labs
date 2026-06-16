@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гра — поле</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-screen">
+        <div class="topbar">
+            <label>Розділ:
+                <select id="category">
+                    <option value="animals">Тварини</option>
+                    <option value="insects">Комахи</option>
+                    <option value="fish">Риби</option>
+                </select>
+            </label>
+            <span>Знайдено: <b id="score">0</b> з 25</span>
+            <a class="btn" href="index.html">На головну</a>
+        </div>
+
+        <div class="game-area">
+            <div id="field" class="field"></div>
+
+            <div class="side">
+                <h3>Поточна картинка</h3>
+                <div id="current" class="current"></div>
+                <button id="restart" class="btn">Почати з початку</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
